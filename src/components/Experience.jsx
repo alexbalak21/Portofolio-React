@@ -19,7 +19,10 @@ function Experience() {
           })}
         </div>
         <ul className="experience__history">
-          {history.map((historyItem, id) => {})}
+          {history.map((historyItem, id) => {
+            // Video time : 21:00
+            // url : https://www.youtube.com/watch?v=7KapMI0Vu-s
+          })}
         </ul>
       </div>
     </section>
