@@ -137,6 +137,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 20px;
   color: var(--color-text);
   z-index: 1;
 }
@@ -170,7 +171,7 @@ html {
 }
 
 .hero__img {
-  width: 30%;
+  width: 25%;
   z-index: 1;
   border-radius: 50%;
   animation-name: floating;
@@ -225,9 +226,13 @@ html {
   .hero__container {
     flex-direction: column-reverse;
   }
+  .hero__content{
+    margin-right: 0;
+  }
 
   .hero__content {
     align-items: center;
+
   }
 }
 
