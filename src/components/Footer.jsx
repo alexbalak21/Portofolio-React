@@ -1,9 +1,8 @@
-import React from "react"
 import emailIcon from "../assets/emailIcon.png"
 import linkedinIcon from "../assets/linkedinIcon.png"
 import githubIcon from "../assets/githubIcon.png"
 
-const Contact = () => {
+const Footer = () => {
   return (
     <footer className="contact__container" id="contact">
       <div className="contact__text">
@@ -28,4 +27,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Footer

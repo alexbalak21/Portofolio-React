@@ -14,12 +14,7 @@ import sql from "../assets/skills/sql.png"
 import javascript from "../assets/skills/javascript.png"
 import tailwind from "../assets/skills/tailwind.png"
 import typescript from "../assets/skills/typescript.png"
-
-import google from "../assets/history/google.png"
-import microsoft from "../assets/history/microsoft.png"
-import netflix from "../assets/history/netflix.png"
-
-import project from "../assets/project.png"
+import nextjs from "../assets/skills/nextjs.png"
 
 export const languages = [
   {
@@ -57,6 +52,11 @@ export const frameworks = [
     title: "Laravel",
     imageSrc: laravel,
   },
+  {
+    title: "Next.js",
+    imageSrc: nextjs,
+  }
+
 ]
 
 export const technologies = [

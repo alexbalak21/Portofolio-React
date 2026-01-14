@@ -1,6 +1,7 @@
 import "./App.css"
 import About from "./components/About"
-import Contact from "./components/Contact"
+import ContactForm from "./components/ContactForm"
+import Footer  from "./components/Footer"
 import Experience from "./components/Experience"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
@@ -16,7 +17,8 @@ function App() {
       <Skills />
       <Experience />
       <Projects />
-      <Contact />
+      <ContactForm />
+      <Footer />
     </div>
   )
 }

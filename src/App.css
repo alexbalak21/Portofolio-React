@@ -163,7 +163,7 @@ html {
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
-  border-radius: 100px;
+  border-radius: 10px;
   font-size: 30px;
   font-weight: 600;
   padding: 17px 26px;
@@ -557,6 +557,95 @@ html {
 }
 
 /*--------------------------------------------------------------
+# Contact Form
+--------------------------------------------------------------*/
+
+.contact-form__container {
+  color: var(--color-text);
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.contact-form__title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.form__group label {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.form__group input,
+.form__group textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100%;
+
+}
+
+.form__group textarea {
+  resize: vertical;
+  min-height: 250px;
+}
+
+.form__submit {
+  padding: 12px 24px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.contact_button_container{
+  display: flex;
+  justify-content: center;
+}
+
+.form__submit:hover {
+  background-color: #485AA8;
+}
+
+@media screen and (max-width: 830px) {
+  .contact-form {
+    width: 90%;
+  }
+
+  .form__submit {
+    align-self: center;
+  }
+}
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 
@@ -573,7 +662,7 @@ html {
 }
 
 .contact__text h2 {
-  font-size: 80px;
+  font-size: 3.8rem;
   font-weight: 700;
   letter-spacing: 4px;
 }
