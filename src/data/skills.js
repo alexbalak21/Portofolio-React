@@ -15,6 +15,8 @@ import javascript from "../assets/skills/javascript.png"
 import tailwind from "../assets/skills/tailwind.png"
 import typescript from "../assets/skills/typescript.png"
 import nextjs from "../assets/skills/nextjs.png"
+import docker from "../assets/skills/docker.png"
+import github from "../assets/skills/github.png"
 
 export const languages = [
   {
@@ -65,20 +67,25 @@ export const technologies = [
     imageSrc: react,
   },
   {
-    title: "Tailwind CSS",
-    imageSrc: tailwind,
-  },
-  {
     title: "TypeScript",
     imageSrc: typescript,
+  },
+  {
+    title: "Tailwind CSS",
+    imageSrc: tailwind,
   },
   {
     title: "Node",
     imageSrc: node,
   },
   {
-    title: "SQL",
-    imageSrc: sql,
+    title: "github",
+    imageSrc: github,
+    
+  },
+  {
+    title: "Docker",
+    imageSrc: docker,
   },
   {
     title: "MongoDB",
