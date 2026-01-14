@@ -19,7 +19,9 @@ import google from "../assets/history/google.png"
 import microsoft from "../assets/history/microsoft.png"
 import netflix from "../assets/history/netflix.png"
 
-const languages = [
+import project from "../assets/project.png"
+
+export const languages = [
   {
     title: "Java",
     imageSrc: java,
@@ -27,31 +29,67 @@ const languages = [
   {
     title: "Python",
     imageSrc: python,
-    }
+  },
+  {
+    title: "JavaScript",
+    imageSrc: javascript,
+  },
+  {
+    title: "PHP",
+    imageSrc: php,
+  },
 ]
 
-const flameworks = [
+export const frameworks = [
   {
     title: "Spring Boot",
     imageSrc: spingboot,
-    },
-    {
+  },
+  {
     title: "Django",
     imageSrc: django,
-    },
+  },
+  {
+    title: "Flask",
+    imageSrc: flask,
+  },
+  {
+    title: "Laravel",
+    imageSrc: laravel,
+  },
 ]
 
-const tehcnologies = [
+export const technologies = [
   {
     title: "React",
     imageSrc: react,
-    },
-    {
+  },
+  {
+    title: "Tailwind CSS",
+    imageSrc: tailwind,
+  },
+  {
+    title: "TypeScript",
+    imageSrc: typescript,
+  },
+  {
     title: "Node",
     imageSrc: node,
-    },
-    {
-        title: "Tailwind CSS",
-        imageSrc: tailwind,
-    }
+  },
+  {
+    title: "SQL",
+    imageSrc: sql,
+  },
+  {
+    title: "MongoDB",
+    imageSrc: mongo,
+  },
+  {
+    title: "HTML",
+    imageSrc: html,
+  },
+  {
+    title: "CSS",
+    imageSrc: css,
+  },
 ]
