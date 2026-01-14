@@ -5,6 +5,12 @@ import node from "../assets/skills/node.png"
 import graph from "../assets/skills/graphql.png"
 import mongo from "../assets/skills/mongodb.png"
 import figma from "../assets/skills/figma.png"
+import spingboot from "../assets/skills/springboot.png"
+import python from "../assets/skills/python.png"
+import java from "../assets/skills/java.png"
+import django from "../assets/skills/django.png"
+import laravel from "../assets/skills/laravel.png" 
+import flask from "../assets/skills/flask.png"
 
 import google from "../assets/history/google.png"
 import microsoft from "../assets/history/microsoft.png"
@@ -14,12 +20,28 @@ import project from "../assets/project.png"
 
 export const skills = [
   {
-    title: "HTML",
-    imageSrc: html,
+    title: "Spring Boot",
+    imageSrc: spingboot,
   },
   {
-    title: "CSS",
-    imageSrc: css,
+    title: "Django",
+    imageSrc: django,
+  },
+  {
+    title: "Flask",
+    imageSrc: flask,
+  },
+  {
+    title: "Laravel",
+    imageSrc: laravel,
+  },
+  {
+    title: "Java",
+    imageSrc: java,
+  },
+  {
+    title: "Python",
+    imageSrc: python,
   },
   {
     title: "React",
