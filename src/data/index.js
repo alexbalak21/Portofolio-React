@@ -21,23 +21,7 @@ import netflix from "../assets/history/netflix.png"
 
 import project from "../assets/project.png"
 
-export const skills = [
-  {
-    title: "Spring Boot",
-    imageSrc: spingboot,
-  },
-  {
-    title: "Django",
-    imageSrc: django,
-  },
-  {
-    title: "Flask",
-    imageSrc: flask,
-  },
-  {
-    title: "Laravel",
-    imageSrc: laravel,
-  },
+export const languages = [
   {
     title: "Java",
     imageSrc: java,
@@ -54,6 +38,28 @@ export const skills = [
     title: "PHP",
     imageSrc: php,
   },
+]
+
+export const frameworks = [
+  {
+    title: "Spring Boot",
+    imageSrc: spingboot,
+  },
+  {
+    title: "Django",
+    imageSrc: django,
+  },
+  {
+    title: "Flask",
+    imageSrc: flask,
+  },
+  {
+    title: "Laravel",
+    imageSrc: laravel,
+  },
+]
+
+export const technologies = [
   {
     title: "React",
     imageSrc: react,
@@ -85,7 +91,7 @@ export const skills = [
   {
     title: "CSS",
     imageSrc: css,
-  }
+  },
 ]
 
 export const history = [
