@@ -1,7 +1,9 @@
-import React from "react"
-import aboutIcon from "../assets/aboutIcon.jpg"
-import cursorIcon from "../assets/cursorIcon.png"
-import serverIcon from "../assets/serverIcon.png"
+import React from "react";
+import aboutIcon from "../assets/aboutIcon.jpg";
+import cursorIcon from "../assets/cursorIcon.png";
+import serverIcon from "../assets/serverIcon.png";
+import uiIcon from "../assets/uiIcon.png";
+import db from "../assets/db.png";
 
 function About() {
   return (
@@ -15,32 +17,38 @@ function About() {
             <div>
               <h3>Back-end Developer</h3>
               <p>
-                I have experience in Java using Spring and Python using Django
-                and Flask I develop fast and optimized backend systems and APIs
+                I have experience building backend systems and APIs using Java with Spring, as well
+                as Python with Django and Flask. I focus on developing fast, optimized, and
+                maintainable server-side solutions.
               </p>
             </div>
           </li>
           <li className="about__item">
-            <img src={cursorIcon} alt="cursor icon" />
+            <img src={uiIcon} alt="cursor icon" />
             <div>
               <h3>Front-end Developer</h3>
               <p>
-                I'm currently learning React, and TypeScript, I know HTML and
-                CSS. I'm building responsive and interactive user interfaces.
+                I work with HTML, CSS, and modern JavaScript, and I build responsive, accessible,
+                and interactive user interfaces using React and TypeScript.
               </p>
             </div>
           </li>
           <li className="about__item">
-            <img src={cursorIcon} alt="cursor icon" />
+            <img src={db} alt="cursor icon" />
             <div>
-              <h3>UI Designer</h3>
-              <p>I have experience in Figma and Adobe XD</p>
+              <h3>Database & Security</h3>
+              <p>
+                I have hands-on experience working with relational and NoSQL databases such as
+                PostgreSQL and MongoDB. I also understand core authentication and security
+                principles, allowing me to build safe, reliable, and well-structured backend
+                systems.
+              </p>
             </div>
           </li>
         </ul>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;

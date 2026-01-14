@@ -1,13 +1,13 @@
-import React from "react"
-import menuIcon from "../assets/menuIcon.png"
-import closeIcon from "../assets/closeIcon.png"
+import React from "react";
+import menuIcon from "../assets/menuIcon.png";
+import closeIcon from "../assets/closeIcon.png";
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = React.useState(false)
+  const [menuOpen, setMenuOpen] = React.useState(false);
   return (
     <nav className="navbar">
       <a href="/" className="navbar__title">
-        Portfolio
+        Alexandre B.
       </a>
       <div className="navbar__menu">
         <img
@@ -18,8 +18,7 @@ function Navbar() {
         />
         <ul
           className={`navbar__menuItems ${menuOpen && "navbar__menuOpen"}`}
-          onClick={() => setMenuOpen(false)}
-        >
+          onClick={() => setMenuOpen(false)}>
           <li>
             <a href="#about">About</a>
           </li>
@@ -35,7 +34,7 @@ function Navbar() {
         </ul>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
