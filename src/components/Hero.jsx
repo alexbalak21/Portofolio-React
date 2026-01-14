@@ -8,16 +8,18 @@ function Hero() {
         <h1 className="hero__title">Hi I'm Alex</h1>
 
         <p className="hero__description">
-          I'm a passionate full‑stack developer with a strong focus on backend engineering. I build
-          user‑ready applications using Java <b>Spring Boot</b>, Python <b>Flask</b>, or PHP{" "}
-          <b>Laravel</b> on the backend, paired with React and other modern web technologies on the
-          frontend. I enjoy turning complex ideas into efficient, intuitive, and easy‑to‑use
-          solutions that fit my client's needs.
+          I'm a full‑stack developer with a strong focus on backend engineering. I build user‑ready
+          applications using Java <b>Spring Boot</b>, Python <b>Flask</b>, or PHP <b>Laravel</b> on
+          the backend, paired with <b>React</b> and other modern web technologies on the frontend. I
+          turn complex requirements into efficient, intuitive, and easy‑to‑use solutions that meet
+          my clients’ needs.
         </p>
+
         <p className="hero__description">
-          When I'm not deep in code, you'll usually find me at the gym, out on a hike, reading tech
-          blogs, or discovering new coffee shops.
+          Outside of development, I spend my time at the gym, hiking, reading tech blogs, or
+          exploring new coffee shops.
         </p>
+
         <a href="mailto:mymail@email.com" className="hero__contactBtn">
           Contact Me
         </a>
