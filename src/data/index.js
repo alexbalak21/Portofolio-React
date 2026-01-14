@@ -2,15 +2,18 @@ import html from "../assets/skills/html.png"
 import css from "../assets/skills/css.png"
 import react from "../assets/skills/react.png"
 import node from "../assets/skills/node.png"
-import graph from "../assets/skills/graphql.png"
 import mongo from "../assets/skills/mongodb.png"
-import figma from "../assets/skills/figma.png"
 import spingboot from "../assets/skills/springboot.png"
 import python from "../assets/skills/python.png"
 import java from "../assets/skills/java.png"
 import django from "../assets/skills/django.png"
 import laravel from "../assets/skills/laravel.png" 
 import flask from "../assets/skills/flask.png"
+import php from "../assets/skills/php.png"
+import sql from "../assets/skills/sql.png"
+import javascript from "../assets/skills/javascript.png"
+import tailwind from "../assets/skills/tailwind.png"
+import typescript from "../assets/skills/typescript.png"
 
 import google from "../assets/history/google.png"
 import microsoft from "../assets/history/microsoft.png"
@@ -44,25 +47,45 @@ export const skills = [
     imageSrc: python,
   },
   {
+    title: "JavaScript",
+    imageSrc: javascript,
+  },
+  {
+    title: "PHP",
+    imageSrc: php,
+  },
+  {
     title: "React",
     imageSrc: react,
+  },
+  {
+    title: "Tailwind CSS",
+    imageSrc: tailwind,
+  },
+  {
+    title: "TypeScript",
+    imageSrc: typescript,
   },
   {
     title: "Node",
     imageSrc: node,
   },
   {
-    title: "GraphQL",
-    imageSrc: graph,
+    title: "SQL",
+    imageSrc: sql,
   },
   {
     title: "MongoDB",
     imageSrc: mongo,
   },
   {
-    title: "Figma",
-    imageSrc: figma,
+    title: "HTML",
+    imageSrc: html,
   },
+  {
+    title: "CSS",
+    imageSrc: css,
+  }
 ]
 
 export const history = [
