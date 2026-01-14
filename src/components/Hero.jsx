@@ -16,7 +16,7 @@ function Hero() {
         </p>
 
         <p className="hero__description">
-          Outside of development, I spend my time at the gym, hiking, reading tech blogs, or
+          Outside of development, I spend my time at the gym, hiking or biking, reading sci fi novels, or
           exploring new coffee shops.
         </p>
 

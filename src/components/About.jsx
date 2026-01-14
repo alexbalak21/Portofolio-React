@@ -39,7 +39,7 @@ function About() {
               <h3>Database & Security</h3>
               <p>
                 I have hands-on experience working with relational and NoSQL databases such as
-                PostgreSQL and MongoDB. I also understand core authentication and security
+                MySQL and MongoDB. I also understand core authentication and security
                 principles, allowing me to build safe, reliable, and well-structured backend
                 systems.
               </p>
