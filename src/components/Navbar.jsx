@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="/" className="navbar__logo">
-        <img src={AB_logo} alt="Logo" />
+        <img src={AB_logo} alt="Site Logo" />
       </a>
       <div className="navbar__menu">
         <img className="navbar__toggle-btn" src={menuOpen ? closeIcon : menuIcon} alt="menu" onClick={() => setMenuOpen(!menuOpen)} />
