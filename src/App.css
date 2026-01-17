@@ -45,6 +45,7 @@ html {
 .navbar__logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   text-decoration: none;
   color: var(--color-text);
@@ -61,6 +62,7 @@ html {
 .navbar__logo img {
   height: 50px;
   width: auto;
+  object-fit: contain;
 }
 
 .navbar__menu {
