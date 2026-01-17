@@ -61,7 +61,7 @@ function Hero() {
       </div>
       <img 
         src={isSmiling ? smile : serius} 
-        alt="Picture of me" 
+        alt="stylish avatar" 
         className="hero__profile-img"
         onMouseEnter={() => setIsSmiling(true)}
         onMouseLeave={() => setIsSmiling(false)}
