@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="/" className="navbar__logo">
-        Alexandre B.
+        Logo AB
       </a>
       <div className="navbar__menu">
         <img className="navbar__toggle-btn" src={menuOpen ? closeIcon : menuIcon} alt="menu" onClick={() => setMenuOpen(!menuOpen)} />
