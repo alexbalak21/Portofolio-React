@@ -1,4 +1,3 @@
-import React from "react"
 import { languages, frameworks, technologies } from "../data/skills"
 
 function Skills() {

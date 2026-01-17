@@ -1,7 +1,7 @@
 import "./App.css"
 import About from "./components/About"
 import ContactForm from "./components/ContactForm"
-import Footer  from "./components/Footer"
+import Footer from "./components/Footer"
 import Experience from "./components/Experience"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"

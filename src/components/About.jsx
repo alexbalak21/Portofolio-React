@@ -1,6 +1,4 @@
-import React from "react";
 import aboutIcon from "../assets/aboutIcon.jpg";
-import cursorIcon from "../assets/cursorIcon.png";
 import serverIcon from "../assets/serverIcon.png";
 import uiIcon from "../assets/uiIcon.png";
 import db from "../assets/db.png";

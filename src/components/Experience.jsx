@@ -1,4 +1,3 @@
-import React from "react"
 import { history } from "../data/index"
 
 function Experience() {

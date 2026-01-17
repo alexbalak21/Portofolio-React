@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -16,10 +16,8 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // For now, just log the data. In a real app, you'd send this to a server or email service.
     console.log('Form submitted:', formData);
     alert('Thank you for your message! (This is a demo - in production, this would send an email)');
-    // Reset form
     setFormData({ name: '', email: '', message: '' });
   };
 
