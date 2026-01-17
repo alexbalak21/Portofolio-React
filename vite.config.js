@@ -2,14 +2,14 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: './',
+  base: '/',
   plugins: [react()],
   build: {
     rollupOptions: {
       output: {
-        format: 'iife',
-        inlineDynamicImports: true,
+        assetFileNames: 'assets/[name].[hash][extname]'
       }
-    }
+    },
+    assetsDir: 'assets'
   }
 })
