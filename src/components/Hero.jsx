@@ -11,11 +11,13 @@ import typeScriptIcon from "../assets/icons/typescript.svg";
 import dockerIcon from "../assets/icons/docker.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 
 import {useState} from "react"
 
 function Hero() {
   const [isSmiling, setIsSmiling] = useState(false)
+  const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false)
   return (
     <section className="hero">
       <div className="hero__content">
@@ -29,7 +31,7 @@ function Hero() {
           <img src={javaIcon} alt="Java" className="tech-icon" /> Java : <b>Spring Boot</b> <img src={springBootIcon} alt="Spring Boot" className="tech-icon" />, <br /> 
           <img src={pythonIcon} alt="Python" className="tech-icon" /> Python : <b>Django</b> <img src={djangoIcon} alt="Django" className="tech-icon" /> & <b>Flask</b> <img src={flaskIcon} alt="Flask" className="tech-icon" />, <br />
           <img src={typeScriptIcon} alt="TypeScript" className="tech-icon" /> Typescript : <b>React</b> <img src={reactIcon} alt="React" className="tech-icon" />, <br />
-          <img src={githubIcon} alt="GitHub" className="tech-icon" /> <b>GitHub</b> & <img src={dockerIcon} alt="Docker" className="tech-icon" /> <b>Docker</b> to organize and deploy my projects.
+          <img src={githubIcon} alt="GitHub" className="tech-icon" /> <b>GitHub</b> & <img src={dockerIcon} alt="Docker" className="tech-icon" /><b>Docker</b> to organize and deploy my projects.
         </div>
 
         <p className="hero__description">
@@ -44,10 +46,16 @@ function Hero() {
           <a 
           href="mailto:alex.balak@outlook.com" 
           className="hero__cta-btn"
-          onMouseEnter={() => setIsSmiling(true)}
-          onMouseLeave={() => setIsSmiling(false)}
+          onMouseEnter={() => {
+            setIsSmiling(true)
+            setIsEnvelopeOpen(true)
+          }}
+          onMouseLeave={() => {
+            setIsSmiling(false)
+            setIsEnvelopeOpen(false)
+          }}
         >
-          Contact Me <FontAwesomeIcon icon={faEnvelope} />
+          Contact Me <FontAwesomeIcon icon={isEnvelopeOpen ? faEnvelopeOpen : faEnvelope} />
         </a>
         </div>
       </div>
