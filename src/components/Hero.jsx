@@ -8,6 +8,8 @@ import laravelIcon from "../assets/icons/laravel.svg";
 import reactIcon from "../assets/icons/react.svg";
 import githubIcon from "../assets/icons/github.svg";
 import phpIcon from "../assets/icons/php.svg";
+import djangoIcon from "../assets/icons/django.svg";
+import typeScriptIcon from "../assets/icons/typescript.svg";
 import {useState} from "react"
 
 function Hero() {
@@ -18,12 +20,13 @@ function Hero() {
         <h1 className="hero__title">Hi I'm Alex</h1>
 
         <p className="hero__description">
-          I'm a full‑stack developer with a strong focus on backend engineering. I build user‑ready applications using: <br />
-          <img src={javaIcon} alt="Java" className="tech-icon" /> Java : <img src={springBootIcon} alt="Spring Boot" className="tech-icon" /> <b>Spring Boot</b>, {" "} 
-          <img src={pythonIcon} alt="Python" className="tech-icon" /> Python : <img src={flaskIcon} alt="Flask" className="tech-icon" /> <b>Flask</b>, {" "} 
-          <img src={phpIcon} alt="PHP" className="tech-icon" /> PHP : <img src={laravelIcon} alt="Laravel" className="tech-icon" /> <b>Laravel</b>, <br /> 
-          <img src={reactIcon} alt="React" className="tech-icon" /> <b>React</b> and {" "} 
-          <img src={githubIcon} alt="GitHub" className="tech-icon" /> <b>GitHub</b>. 
+          I'm a full‑stack developer with a strong focus on backend engineering. <br /> I build user‑ready applications using: <br />
+        <div className="hero__tech-list">
+           <img src={javaIcon} alt="Java" className="tech-icon" /> Java : <b>Spring Boot</b> <img src={springBootIcon} alt="Spring Boot" className="tech-icon" />, <br /> 
+          <img src={pythonIcon} alt="Python" className="tech-icon" /> Python : <b>Django</b><img src={djangoIcon} alt="Django" className="tech-icon" /> & <b>Flask</b><img src={flaskIcon} alt="Flask" className="tech-icon" />,<br />
+          <img src={typeScriptIcon} alt="TypeScript" className="tech-icon" /> Typescript : <b>React</b><img src={reactIcon} alt="React" className="tech-icon" /><br />
+          <img src={githubIcon} alt="GitHub" className="tech-icon" /> <b>GitHub</b> to keep track of my projects.
+        </div>
           I turn complex requirements into efficient, intuitive, and easy‑to‑use solutions that meet my clients' needs.
         </p>
 
