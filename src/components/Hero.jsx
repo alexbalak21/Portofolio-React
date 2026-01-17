@@ -22,7 +22,12 @@ function Hero() {
           exploring new coffee shops.
         </p>
 
-        <a href="mailto:mymail@email.com" className="hero__cta-btn">
+        <a 
+          href="mailto:mymail@email.com" 
+          className="hero__cta-btn"
+          onMouseEnter={() => setIsSmiling(true)}
+          onMouseLeave={() => setIsSmiling(false)}
+        >
           Contact Me
         </a>
       </div>
