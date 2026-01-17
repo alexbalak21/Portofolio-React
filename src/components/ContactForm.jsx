@@ -22,7 +22,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="contact-form" id="contact-form">
+    <section className="contact-form" id="contact">
       <h2 className="contact-form__heading">Get In Touch</h2>
       <form className="contact-form__wrapper" onSubmit={handleSubmit}>
         <div className="contact-form__field">

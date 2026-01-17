@@ -4,7 +4,7 @@ import githubIcon from "../assets/githubIcon.png"
 
 const Footer = () => {
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer" id="footer">
       <div className="footer__heading">
         <h2>Contact</h2>
         <p>Feel free to reach out</p>
