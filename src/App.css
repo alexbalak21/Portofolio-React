@@ -37,7 +37,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 61px;
+  padding-top: 20px;
   z-index: 2;
   margin: 0 10%;
 }
@@ -48,6 +48,14 @@ html {
   gap: 12px;
   text-decoration: none;
   color: var(--color-text);
+  border-radius: 15px;
+  padding: 16px 28px;
+  background: linear-gradient(90deg, rgba(12, 12, 12, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.3s;
+}
+
+.navbar__logo:hover {
+  background: linear-gradient(90deg, rgba(25, 55, 109, 0.8) 0%, rgba(255, 255, 255, 0.05) 100%);
 }
 
 .navbar__logo img {
@@ -61,6 +69,7 @@ html {
 
 .navbar__toggle-btn {
   display: none;
+  margin-top: 20px;
 }
 
 .navbar__list {
@@ -114,6 +123,7 @@ html {
   .navbar__list--open {
     display: flex;
     z-index: 1;
+    margin-top: 11px;
   }
 
   .hero__title {
