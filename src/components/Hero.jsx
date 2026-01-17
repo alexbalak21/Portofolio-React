@@ -10,6 +10,7 @@ import githubIcon from "../assets/icons/github.svg";
 import phpIcon from "../assets/icons/php.svg";
 import djangoIcon from "../assets/icons/django.svg";
 import typeScriptIcon from "../assets/icons/typescript.svg";
+import dockerIcon from "../assets/icons/docker.svg";
 import {useState} from "react"
 
 function Hero() {
@@ -25,7 +26,7 @@ function Hero() {
            <img src={javaIcon} alt="Java" className="tech-icon" /> Java : <b>Spring Boot</b> <img src={springBootIcon} alt="Spring Boot" className="tech-icon" />, <br /> 
           <img src={pythonIcon} alt="Python" className="tech-icon" /> Python : <b>Django</b><img src={djangoIcon} alt="Django" className="tech-icon" /> & <b>Flask</b><img src={flaskIcon} alt="Flask" className="tech-icon" />,<br />
           <img src={typeScriptIcon} alt="TypeScript" className="tech-icon" /> Typescript : <b>React</b><img src={reactIcon} alt="React" className="tech-icon" /><br />
-          <img src={githubIcon} alt="GitHub" className="tech-icon" /> <b>GitHub</b> to keep track of my projects.
+          <img src={githubIcon} alt="GitHub" className="tech-icon" /><b>GitHub</b> & <img src={dockerIcon} alt="Docker" className="tech-icon" /><b>Doker</b> to keep my projects deployed and organized. <br /> 
         </div>
           I turn complex requirements into efficient, intuitive, and easy‑to‑use solutions that meet my clients' needs.
         </p>
