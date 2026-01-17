@@ -2,14 +2,14 @@ import { history } from "../data/index"
 
 function Experience() {
   return (
-    <section className="experience__container" id="experience">
+    <section className="experience" id="experience">
       <h2 className="experience__title">Experience</h2>
-      <ul className="experience__history">
+      <ul className="experience__list">
         {history.map((historyItem, id) => {
           return (
-            <li className="experience__historyItem" key={id}>
+            <li className="experience__card" key={id}>
               <img src={historyItem.imageSrc} alt={historyItem.title} />
-              <div className="experience__historyItemDetails">
+              <div className="experience__details">
                 <h3>
                   {historyItem.role} at {historyItem.organisation}
                 </h3>

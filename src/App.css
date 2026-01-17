@@ -21,7 +21,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.app {
+.portfolio {
   background-color: var(--color-bg);
   width: 100%;
   height: 100%;
@@ -42,7 +42,7 @@ html {
   margin: 0 10%;
 }
 
-.navbar__title {
+.navbar__logo {
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
@@ -53,17 +53,17 @@ html {
   display: flex;
 }
 
-.navbar__menuBtn {
+.navbar__toggle-btn {
   display: none;
 }
 
-.navbar__menuItems {
+.navbar__list {
   display: flex;
   gap: 47px;
   list-style: none;
 }
 
-.navbar__menuItems a {
+.navbar__list a {
   font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
@@ -85,12 +85,12 @@ html {
     z-index: 3;
   }
 
-  .navbar__menuBtn {
+  .navbar__toggle-btn {
     display: block;
     cursor: pointer;
   }
 
-  .navbar__menuItems {
+  .navbar__list {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -101,11 +101,11 @@ html {
     background: linear-gradient(0deg, rgba(25, 55, 109, 0.85) 0%, rgba(25, 55, 109, 1) 100%);
   }
 
-  .navbar__menuItems a {
+  .navbar__list a {
     font-size: 40px;
   }
 
-  .navbar__menuOpen {
+  .navbar__list--open {
     display: flex;
     z-index: 1;
   }
@@ -120,7 +120,7 @@ html {
 # Hero
 --------------------------------------------------------------*/
 
-.hero__container {
+.hero {
   position: relative;
   display: flex;
   align-items: center;
@@ -157,7 +157,7 @@ html {
   margin-bottom: 52px;
 }
 
-.hero__contactBtn {
+.hero__cta-btn {
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
@@ -168,7 +168,7 @@ html {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.hero__img {
+.hero__profile-img {
   width: 25%;
   z-index: 1;
   border-radius: 50%;
@@ -192,7 +192,7 @@ html {
   }
 }
 
-.hero__topBlur {
+.hero__bg-blur--top {
   position: absolute;
   width: 50vw;
   height: 50vw;
@@ -206,7 +206,7 @@ html {
   z-index: 0;
 }
 
-.hero__bottomBlur {
+.hero__bg-blur--bottom {
   position: absolute;
   width: 70vw;
   height: 50vw;
@@ -221,7 +221,7 @@ html {
 }
 
 @media screen and (max-width: 830px) {
-  .hero__container {
+  .hero {
     flex-direction: column-reverse;
   }
   .hero__content {
@@ -237,7 +237,7 @@ html {
 # About
 --------------------------------------------------------------*/
 
-.about__container {
+.about {
   position: relative;
   background-color: rgba(12, 12, 12, 0.6);
   border-radius: 15px;
@@ -262,20 +262,20 @@ html {
   align-items: center;
 }
 
-.about__img {
+.about__profile-img {
   width: 35%;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.about__items {
+.about__list {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-.about__item {
+.about__card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -288,21 +288,21 @@ html {
   transition: 0.4s;
 }
 
-.about__item:hover {
+.about__card:hover {
   background-size: 100% 100%;
 }
 
-.about__item h3 {
+.about__card h3 {
   font-size: 25px;
   font-weight: 600;
 }
 
-.about__item p {
+.about__card p {
   font-size: 25px;
 }
 
 @media screen and (max-width: 830px) {
-  .about__container {
+  .about {
     background-color: transparent;
     padding-left: 0;
     padding-right: 0;
@@ -312,15 +312,15 @@ html {
     flex-direction: column;
   }
 
-  .about__img {
+  .about__profile-img {
     display: none;
   }
 
-  .about__items {
+  .about__list {
     margin-top: 29px;
   }
 
-  .about__item {
+  .about__card {
     padding-left: 0;
     padding-right: 0;
   }
@@ -330,7 +330,7 @@ html {
 # Skills
 --------------------------------------------------------------*/
 
-.skills__container {
+.skills {
   color: var(--color-text);
   margin-top: 79px;
   margin-left: 10%;
@@ -345,7 +345,7 @@ html {
   text-transform: uppercase;
 }
 
-.skills__subtitle {
+.skills__category-title {
   margin-top: 14px;
   font-size: 25px;
   font-weight: 400;
@@ -354,7 +354,7 @@ html {
   text-align: center;
 }
 
-.skills__content {
+.skills__grid {
   margin-top: 14px;
   display: flex;
   flex-wrap: wrap;
@@ -362,14 +362,14 @@ html {
   gap: 37px;
 }
 
-.skills__skill {
+.skills__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 11px;
 }
 
-.skills__skillImageContainer {
+.skills__icon-wrapper {
   background-color: var(--color-secondary);
   border-radius: 100%;
   display: flex;
@@ -379,17 +379,17 @@ html {
   height: 120px;
 }
 
-.skills__skillImageContainer img {
+.skills__icon-wrapper img {
   width: 75px;
 }
 
-.skills__skill p {
+.skills__item p {
   font-size: 25px;
   font-weight: 500;
 }
 
 @media screen and (max-width: 830px) {
-  .skills__content {
+  .skills__grid {
     flex-direction: row;
     justify-content: center;
   }
@@ -399,7 +399,7 @@ html {
 # Experience
 --------------------------------------------------------------*/
 
-.experience__container {
+.experience {
   color: var(--color-text);
   margin-top: 79px;
   margin-left: 10%;
@@ -414,14 +414,14 @@ html {
   text-transform: uppercase;
 }
 
-.experience__history {
+.experience__list {
   margin-top: 14px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.experience__historyItem {
+.experience__card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -432,23 +432,23 @@ html {
   padding: 24px;
 }
 
-.experience__historyItem img {
+.experience__card img {
   width: 50px;
 }
 
-.experience__historyItemDetails h3 {
+.experience__details h3 {
   font-size: 30px;
   font-weight: 500;
 }
 
-.experience__historyItemDetails p {
+.experience__details p {
   font-family: cursive;
   font-size: 20px;
   font-weight: 300;
   color: #777;
 }
 
-.experience__historyItemDetails ul {
+.experience__details ul {
   margin-top: 6px;
   list-style-position: inside;
   font-size: 25px;
@@ -457,7 +457,7 @@ html {
 }
 
 @media screen and (max-width: 830px) {
-  .experience__history {
+  .experience__list {
     gap: 9px;
   }
 }
@@ -466,7 +466,7 @@ html {
 # Projects
 --------------------------------------------------------------*/
 
-.projects__container {
+.projects {
   margin-top: 76px;
   color: var(--color-text);
   margin-left: 10%;
@@ -480,7 +480,7 @@ html {
   text-transform: uppercase;
 }
 
-.projects {
+.projects__grid {
   margin-top: 37px;
   display: flex;
   flex-direction: row;
@@ -491,7 +491,7 @@ html {
   width: 100%;
 }
 
-.project-container {
+.projects__card {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -501,22 +501,22 @@ html {
   max-width: 345px;
 }
 
-.project-img {
+.projects__card-img {
   margin-bottom: 26px;
 }
 
-.project-title {
+.projects__card-title {
   font-size: 25px;
   font-weight: 700;
 }
 
-.project-description {
+.projects__card-description {
   margin-top: 6px;
   font-size: 25px;
   font-weight: 400;
 }
 
-.project-skills {
+.projects__tech-stack {
   width: 100%;
   margin-top: 14px;
   display: flex;
@@ -526,7 +526,7 @@ html {
   list-style: none;
 }
 
-.project-skill {
+.projects__tech-tag {
   font-size: 25px;
   font-weight: 400;
   border-radius: 100px;
@@ -534,14 +534,14 @@ html {
   padding: 2px 22px;
 }
 
-.project-links {
+.projects__links {
   width: 100%;
   margin-top: 26px;
   display: flex;
   justify-content: space-around;
 }
 
-.project-link {
+.projects__btn {
   text-decoration: none;
   color: var(--color-text);
   font-size: 30px;
@@ -555,7 +555,7 @@ html {
 # Contact Form
 --------------------------------------------------------------*/
 
-.contact-form__container {
+.contact-form {
   color: var(--color-text);
   margin-top: 79px;
   margin-left: 10%;
@@ -563,7 +563,7 @@ html {
   text-align: center;
 }
 
-.contact-form__title {
+.contact-form__heading {
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
@@ -571,7 +571,7 @@ html {
   margin-bottom: 37px;
 }
 
-.contact-form {
+.contact-form__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -580,21 +580,21 @@ html {
   margin: 0 auto;
 }
 
-.form__group {
+.contact-form__field {
   display: flex;
   flex-direction: column;
   gap: 5px;
   width: 100%;
 }
 
-.form__group label {
+.contact-form__field label {
   font-size: 20px;
   font-weight: 500;
   text-align: left;
 }
 
-.form__group input,
-.form__group textarea {
+.contact-form__field input,
+.contact-form__field textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -602,12 +602,12 @@ html {
   width: 100%;
 }
 
-.form__group textarea {
+.contact-form__field textarea {
   resize: vertical;
-  min-height: 250px;
+  min-height: 300px;
 }
 
-.form__submit {
+.contact-form__submit-btn {
   padding: 12px 24px;
   background-color: var(--color-primary);
   color: var(--color-text);
@@ -620,21 +620,21 @@ html {
   align-self: flex-start;
 }
 
-.contact_button_container {
+.contact-form__btn-wrapper {
   display: flex;
   justify-content: center;
 }
 
-.form__submit:hover {
+.contact-form__submit-btn:hover {
   background-color: #485aa8;
 }
 
 @media screen and (max-width: 830px) {
-  .contact-form {
+  .contact-form__wrapper {
     width: 90%;
   }
 
-  .form__submit {
+  .contact-form__submit-btn {
     align-self: center;
   }
 }
@@ -643,7 +643,7 @@ html {
 # Contact
 --------------------------------------------------------------*/
 
-.contact__container {
+.footer {
   color: var(--color-text);
   margin-top: 120px;
   background-color: var(--color-secondary);
@@ -655,19 +655,19 @@ html {
   gap: 10px;
 }
 
-.contact__text h2 {
+.footer__heading h2 {
   font-size: 3.8rem;
   font-weight: 700;
   letter-spacing: 4px;
 }
 
-.contact__text p {
+.footer__heading p {
   font-size: 40px;
   font-weight: 400;
   letter-spacing: 2px;
 }
 
-.contact__links {
+.footer__social-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -675,13 +675,13 @@ html {
   gap: 26px;
 }
 
-.contact__link {
+.footer__social-item {
   display: flex;
   align-items: center;
   gap: 25px;
 }
 
-.contact__link a {
+.footer__social-item a {
   color: var(--color-text);
   text-decoration: none;
   font-size: 30px;
@@ -690,18 +690,18 @@ html {
 }
 
 @media screen and (max-width: 830px) {
-  .contact__container {
+  .footer {
     flex-direction: column;
     gap: 23px;
   }
 
-  .contact__text {
+  .footer__heading {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .contact__links {
+  .footer__social-list {
     align-items: center;
   }
 }

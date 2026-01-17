@@ -2,7 +2,7 @@ import hero from "../assets/hero.jpg";
 
 function Hero() {
   return (
-    <section className="hero__container">
+    <section className="hero">
       <div className="hero__content">
         <h1 className="hero__title">Hi I'm Alex</h1>
 
@@ -19,13 +19,13 @@ function Hero() {
           exploring new coffee shops.
         </p>
 
-        <a href="mailto:mymail@email.com" className="hero__contactBtn">
+        <a href="mailto:mymail@email.com" className="hero__cta-btn">
           Contact Me
         </a>
       </div>
-      <img src={hero} alt="Picture of me" className="hero__img" />
-      <div className="hero__topBlur"></div>
-      <div className="hero__bottomBlur"></div>
+      <img src={hero} alt="Picture of me" className="hero__profile-img" />
+      <div className="hero__bg-blur--top"></div>
+      <div className="hero__bg-blur--bottom"></div>
     </section>
   );
 }

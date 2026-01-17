@@ -22,10 +22,10 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="contact-form__container" id="contact-form">
-      <h2 className="contact-form__title">Get In Touch</h2>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="form__group">
+    <section className="contact-form" id="contact-form">
+      <h2 className="contact-form__heading">Get In Touch</h2>
+      <form className="contact-form__wrapper" onSubmit={handleSubmit}>
+        <div className="contact-form__field">
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -36,7 +36,7 @@ const ContactForm = () => {
             required
           />
         </div>
-        <div className="form__group">
+        <div className="contact-form__field">
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -47,7 +47,7 @@ const ContactForm = () => {
             required
           />
         </div>
-        <div className="form__group">
+        <div className="contact-form__field">
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
@@ -57,8 +57,8 @@ const ContactForm = () => {
             required
           ></textarea>
         </div>
-        <div className="contact_button_container">
-            <button type="submit" className="form__submit">Send Message</button>
+        <div className="contact-form__btn-wrapper">
+            <button type="submit" className="contact-form__submit-btn">Send Message</button>
         </div>
       </form>
     </section>

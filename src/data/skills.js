@@ -2,7 +2,7 @@ import html from "../assets/skills/html.png"
 import css from "../assets/skills/css.png"
 import react from "../assets/skills/react.png"
 import node from "../assets/skills/node.png"
-import mongo from "../assets/skills/mongodb.png"
+import sql from "../assets/skills/sql.png"
 import spingboot from "../assets/skills/springboot.png"
 import python from "../assets/skills/python.png"
 import java from "../assets/skills/java.png"
@@ -87,8 +87,8 @@ export const technologies = [
     imageSrc: docker,
   },
   {
-    title: "MongoDB",
-    imageSrc: mongo,
+    title: "SQL",
+    imageSrc: sql,
   },
   {
     title: "HTML",

@@ -5,12 +5,12 @@ import db from "../assets/db.png";
 
 function About() {
   return (
-    <section className="about__container" id="about">
+    <section className="about" id="about">
       <h2 className="about__title">About</h2>
       <div className="about__content">
-        <img src={aboutIcon} className="about__img" alt="about icon" />
-        <ul className="about__items">
-          <li className="about__item">
+        <img src={aboutIcon} className="about__profile-img" alt="about icon" />
+        <ul className="about__list">
+          <li className="about__card">
             <img src={serverIcon} alt="server icon" />
             <div>
               <h3>Back-end Developer</h3>
@@ -21,7 +21,7 @@ function About() {
               </p>
             </div>
           </li>
-          <li className="about__item">
+          <li className="about__card">
             <img src={uiIcon} alt="cursor icon" />
             <div>
               <h3>Front-end Developer</h3>
@@ -31,7 +31,7 @@ function About() {
               </p>
             </div>
           </li>
-          <li className="about__item">
+          <li className="about__card">
             <img src={db} alt="cursor icon" />
             <div>
               <h3>Database & Security</h3>

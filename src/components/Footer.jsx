@@ -4,21 +4,21 @@ import githubIcon from "../assets/githubIcon.png"
 
 const Footer = () => {
   return (
-    <footer className="contact__container" id="contact">
-      <div className="contact__text">
+    <footer className="footer" id="contact">
+      <div className="footer__heading">
         <h2>Contact</h2>
         <p>Feel free to reach out</p>
       </div>
-      <ul className="contact__links">
-        <li className="contact__link">
+      <ul className="footer__social-list">
+        <li className="footer__social-item">
           <img src={emailIcon} alt="email icon" />
           <a href="mailto:email@mail.com">email@mail.com</a>
         </li>
-        <li className="contact__link">
+        <li className="footer__social-item">
           <img src={linkedinIcon} alt="email icon" />
           <a href="linkedin.com">linkedin.com/alex</a>
         </li>
-        <li className="contact__link">
+        <li className="footer__social-item">
           <img src={githubIcon} alt="github icon" />
           <a href="github.com/alex">github.com/alex</a>
         </li>
