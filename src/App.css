@@ -194,7 +194,32 @@ html {
 
 .hero__description {
   font-size: 30px;
-  margin-bottom: 52px;
+  margin-bottom: 16px;
+}
+
+.hero__tech-list {
+  list-style: none;
+  font-size: 30px;
+  margin-bottom: 16px;
+  padding-left: 0;
+}
+
+.hero__tech-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__cta-btn-wrapper{
+  margin-top: 52px;
+}
+
+.tech-icon {
+  height: 30px;
+  width: 30px;
+  display: inline;
+  margin: 0 4px;
+  vertical-align: middle;
 }
 
 .hero__cta-btn {
