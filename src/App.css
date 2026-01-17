@@ -43,10 +43,16 @@ html {
 }
 
 .navbar__logo {
-  font-size: 30px;
-  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   text-decoration: none;
   color: var(--color-text);
+}
+
+.navbar__logo img {
+  height: 50px;
+  width: auto;
 }
 
 .navbar__menu {
