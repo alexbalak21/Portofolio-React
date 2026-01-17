@@ -1,6 +1,9 @@
 import serius from "../assets/avatar/serius.png";
+import smile from "../assets/avatar/smile.png";
+import {useState} from "react"
 
 function Hero() {
+  const [isSmiling, setIsSmiling] = useState(false)
   return (
     <section className="hero">
       <div className="hero__content">
@@ -23,7 +26,13 @@ function Hero() {
           Contact Me
         </a>
       </div>
-      <img src={serius} alt="Picture of me" className="hero__profile-img" />
+      <img 
+        src={isSmiling ? smile : serius} 
+        alt="Picture of me" 
+        className="hero__profile-img"
+        onMouseEnter={() => setIsSmiling(true)}
+        onMouseLeave={() => setIsSmiling(false)}
+      />
       <div className="hero__bg-blur--top"></div>
       <div className="hero__bg-blur--bottom"></div>
     </section>

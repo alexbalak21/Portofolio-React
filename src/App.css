@@ -191,10 +191,13 @@ html {
   z-index: 1;
   border-radius: 50%;
   background: linear-gradient(135deg, rgba(87, 108, 188, 0.3) 0%, rgba(25, 55, 109, 0.5) 100%);
-  background: linear-gradient(135deg, rgba(200, 80, 100, 0.4) 0%, rgba(87, 108, 188, 0.4) 100%);
-  padding: 12px;
   padding: 12px;
   box-shadow: 0 8px 32px rgba(25, 55, 109, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.hero__profile-img:hover {
+  background: linear-gradient(135deg, rgba(200, 80, 100, 0.4) 0%, rgba(87, 108, 188, 0.4) 100%);
 }
 
 @keyframes floating {
