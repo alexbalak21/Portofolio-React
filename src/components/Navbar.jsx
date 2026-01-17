@@ -1,7 +1,6 @@
 import menuIcon from "../assets/menuIcon.png"
 import closeIcon from "../assets/closeIcon.png"
-import logoSvg from "../assets/logos/logo.svg"
-import abSvg from "../assets/logos/ab.svg"
+import AB_logo from "../assets/logos/ab.png"
 import {useState} from "react"
 
 function Navbar() {
@@ -9,8 +8,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="/" className="navbar__logo">
-        <img src={logoSvg} alt="Logo" />
-        <img src={abSvg} alt="AB" />
+        <img src={AB_logo} alt="Logo" />
       </a>
       <div className="navbar__menu">
         <img className="navbar__toggle-btn" src={menuOpen ? closeIcon : menuIcon} alt="menu" onClick={() => setMenuOpen(!menuOpen)} />
