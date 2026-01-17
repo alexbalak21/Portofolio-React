@@ -1,4 +1,4 @@
-import hero from "../assets/hero.jpg";
+import serius from "../assets/avatar/serius.png";
 
 function Hero() {
   return (
@@ -23,7 +23,7 @@ function Hero() {
           Contact Me
         </a>
       </div>
-      <img src={hero} alt="Picture of me" className="hero__profile-img" />
+      <img src={serius} alt="Picture of me" className="hero__profile-img" />
       <div className="hero__bg-blur--top"></div>
       <div className="hero__bg-blur--bottom"></div>
     </section>
