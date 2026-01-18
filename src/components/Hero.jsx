@@ -16,6 +16,11 @@ import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from "react"
 
 const HERO_TITLE = "Hi I'm Alex"
+const HERO_GREETING = "Hi !"
+const HERO_BASE = "Hi"
+const TYPING_SPEED_MS = 90
+const DELETE_SPEED_MS = 60
+const PAUSE_AFTER_GREETING_MS = 600
 
 function Hero() {
   const [isSmiling, setIsSmiling] = useState(false)
@@ -23,18 +28,41 @@ function Hero() {
   const [typedTitle, setTypedTitle] = useState("")
 
   useEffect(() => {
-    let currentIndex = 0
+    let isMounted = true
 
-    const typingTimer = setInterval(() => {
-      currentIndex += 1
-      setTypedTitle(HERO_TITLE.slice(0, currentIndex))
+    const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
-      if (currentIndex === HERO_TITLE.length) {
-        clearInterval(typingTimer)
+    const typeSequence = async () => {
+      // Type the short greeting "Hi !"
+      for (let i = 1; i <= HERO_GREETING.length; i += 1) {
+        if (!isMounted) return
+        setTypedTitle(HERO_GREETING.slice(0, i))
+        await wait(TYPING_SPEED_MS)
       }
-    }, 90)
 
-    return () => clearInterval(typingTimer)
+      // Brief pause before erasing
+      await wait(PAUSE_AFTER_GREETING_MS)
+
+      // Erase back to the base "Hi"
+      for (let i = HERO_GREETING.length - 1; i >= HERO_BASE.length; i -= 1) {
+        if (!isMounted) return
+        setTypedTitle(HERO_GREETING.slice(0, i))
+        await wait(DELETE_SPEED_MS)
+      }
+
+      // Type the full title from the preserved base
+      for (let i = HERO_BASE.length + 1; i <= HERO_TITLE.length; i += 1) {
+        if (!isMounted) return
+        setTypedTitle(HERO_TITLE.slice(0, i))
+        await wait(TYPING_SPEED_MS)
+      }
+    }
+
+    typeSequence()
+
+    return () => {
+      isMounted = false
+    }
   }, [])
   return (
     <section className="hero">
