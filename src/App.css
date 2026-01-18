@@ -194,6 +194,24 @@ html {
   ); */
 }
 
+.hero__title-caret {
+  display: inline-block;
+  width: 0.8ch;
+  color: var(--color-primary);
+  animation: heroCaretBlink 0.9s steps(2, start) infinite;
+}
+
+.hero__title-caret--done {
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes heroCaretBlink {
+  to {
+    visibility: hidden;
+  }
+}
+
 .hero__description {
   font-size: 26px;
   margin-bottom: 16px;

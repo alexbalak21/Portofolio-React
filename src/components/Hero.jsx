@@ -13,15 +13,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 
-import {useState} from "react"
+import { useEffect, useState } from "react"
+
+const HERO_TITLE = "Hi I'm Alex"
 
 function Hero() {
   const [isSmiling, setIsSmiling] = useState(false)
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false)
+  const [typedTitle, setTypedTitle] = useState("")
+
+  useEffect(() => {
+    let currentIndex = 0
+
+    const typingTimer = setInterval(() => {
+      currentIndex += 1
+      setTypedTitle(HERO_TITLE.slice(0, currentIndex))
+
+      if (currentIndex === HERO_TITLE.length) {
+        clearInterval(typingTimer)
+      }
+    }, 90)
+
+    return () => clearInterval(typingTimer)
+  }, [])
   return (
     <section className="hero">
       <div className="hero__content">
-        <h1 className="hero__title">Hi I'm Alex</h1>
+        <h1 className="hero__title">
+          {typedTitle}
+          <span className={`hero__title-caret ${typedTitle === HERO_TITLE ? "hero__title-caret--done" : ""}`}>
+            |
+          </span>
+        </h1>
 
         <p className="hero__description">
           I'm a full‑stack developer with a strong focus on backend engineering. I build user‑ready applications using:
